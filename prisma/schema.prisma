@@ -8,11 +8,16 @@ datasource db {
 }
 
 model BabyName {
-  id        Int      @id @default(autoincrement())
-  name      String   @unique
-  count     Int      @default(1)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id         Int       @id @default(autoincrement())
+  name       String    @unique
+  count      Int       @default(1)
+  meaning    String?
+  funFacts   Json?
+  trendiness Int?
+  rank       String?
+  enrichedAt DateTime?
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
 
   @@index([count(sort: Desc)])
 }
