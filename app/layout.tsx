@@ -8,7 +8,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Baby Name Suggestions",
+  title: "Bumpboard",
   description: "Suggest and vote for your favorite baby names!",
 };
 
